@@ -1,0 +1,24 @@
+1. Need to extract key from publickey file.
+   Key is encoded into public key file, which should not be read directly.
+
+Trying to extract key from public key file.
+
+2. Referrence for the functionality is:
+openssl ec -in mb_publickey -pubin -text -noout.
+
+
+
+root@vkalyanam-Lenovo-B41-80:~/openssl-1.0.2p# ./apps/openssl ec -in mb_publickey -pubin -text -noout
+ OPENSSL MAIN
+WARNING: can't open config file: /usr/local/ssl/openssl.cnf
+EC main entered
+read EC key
+Private-Key: (256 bit)
+pub:123 
+    04:3b:93:93:73:59:f6:a0:99:37:03:d2:d4:98:60:
+    79:60:3a:87:20:a3:b4:8e:8d:a4:7f:c8:2d:62:47:
+    b4:e4:40:35:a6:bf:70:d5:24:f6:71:6c:88:72:96:
+    0c:6f:9f:45:cb:1e:52:b2:22:a4:d6:f8:c6:ac:2b:
+    44:af:62:a1:fb
+ASN1 OID: prime256v1
+NIST CURVE: P-256
